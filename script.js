@@ -22,8 +22,7 @@ const bankData = [
   { title: "--", rank: "حامل بيرق", money: "--" },
   { title: "--", rank: "حامل رايه", money: "--" },
   { title: "اوسوب", rank: "مشرف متدرب", money: "20K" },
-  { title: "ساسكي", rank: "مشرف متدرب", money: "20K" },
-  { title: "كاناو", rank: "عضو", money: "10K" }
+  { title: "ساسكي", rank: "مشرف متدرب", money: "20K" }
 ];
 
 const tableBody = document.getElementById("bankTable");
