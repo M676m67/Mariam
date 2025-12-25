@@ -48,7 +48,6 @@ const bankData = [
   { title: "بلاك", rank: "عضو", money: "5K" },
   { title: "ايلينا", rank: "عضو", money: "5K" },
   { title: "ايس", rank: "عضو", money: "5K" },
-  { title: "اكازا", rank: "عضو", money: "5K" },
   { title: "ايزن", rank: "عضو", money: "5K" }
 ];
 
