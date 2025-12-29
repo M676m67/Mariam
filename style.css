@@ -6,8 +6,8 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background: black; /* خلفية ليلية ثلجية */
-  color: #f0faff; /* نصوص ثلجية */
+  background: radial-gradient(circle at center, #1e3c72 0%, #112240 50%, #000000 100%);
+  color: #f0faff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,15 +16,16 @@ body {
 }
 
 h1 {
-  margin-top: 50px; /* مطابق للملف الكبير */
-  font-size: 60px; /* مطابق للملف الكبير */
+  margin-top: 30px;
+  font-size: 40px;
   font-weight: 900;
-  text-transform: uppercase;
-  background: linear-gradient(to bottom, #ffffff 30%, #a5d8ff 60%, #ffffff 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.8)) 
-          drop-shadow(0 4px 10px rgba(173, 216, 230, 0.5));
+  color: #f0faff;
+  text-shadow:
+    0 0 5px #ffffff,
+    0 0 10px #d0f0ff,
+    0 0 15px #a0e0ff,
+    0 0 20px #80dfff,
+    0 3px 5px rgba(255,255,255,0.8);
   position: relative;
   z-index: 2;
 }
@@ -35,21 +36,21 @@ h1::after {
   bottom: -5px;
   left: 0;
   width: 100%;
-  height: 6px;
+  height: 4px;
   background: linear-gradient(90deg, #fff, #e0f7ff, #c0e8ff, #fff);
-  border-radius: 3px;
+  border-radius: 2px;
   filter: blur(2px);
   z-index: -1;
 }
 
 #searchInput {
-  width: 320px;
-  padding: 15px;
+  width: 300px;
+  padding: 12px;
   border-radius: 30px;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.25);
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   color: white;
   text-align: center;
   outline: none;
@@ -60,13 +61,13 @@ h1::after {
 }
 
 #searchInput::placeholder {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255,255,255,0.6);
 }
 
 #searchInput:focus {
   transform: scale(1.07);
-  box-shadow: 0 0 20px rgba(155, 92, 255, 0.8);
-  border-color: rgba(155, 92, 255, 0.9);
+  box-shadow: 0 0 20px rgba(155,92,255,0.8);
+  border-color: rgba(155,92,255,0.9);
 }
 
 #searchInput:active {
@@ -75,11 +76,11 @@ h1::after {
 
 .table-container {
   width: 90%;
-  max-width: 850px; /* مطابق للملف الكبير */
-  background: rgba(255,255,255,0.07);
-  backdrop-filter: blur(15px);
-  border-radius: 20px;
-  padding: 25px;
+  max-width: 800px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(6px);
+  border-radius: 15px;
+  padding: 20px;
   position: relative;
   z-index: 2;
 }
@@ -89,31 +90,32 @@ table {
   border-collapse: collapse;
 }
 
-th {
-  background: rgba(173, 216, 230, 0.2);
-  color: #c0e8ff;
-  font-size: 18px;
-  padding: 15px;
-  text-shadow: 0 0 5px rgba(255,255,255,0.3);
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  border-right: 1px solid rgba(255,255,255,0.2);
 }
 
-td {
-  padding: 15px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  text-align: center;
-  transition: 0.3s;
+th:first-child,
+td:first-child {
+  border-right: none;
+}
+
+th {
+  background: rgba(255,255,255,0.12);
+  font-weight: bold;
 }
 
 tr:hover td {
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  background: rgba(255,255,255,0.07);
+  transition: 0.3s;
 }
 
 .snowflake {
   position: fixed;
   top: -20px;
-  color: #f0faff; /* حبيبات ثلجية */
-  text-shadow: 0 0 5px #fff;
+  color: #f0faff;
   user-select: none;
   pointer-events: none;
   animation: fall linear infinite;
@@ -131,7 +133,7 @@ tr:hover td {
   margin-top: auto;
   width: 100%;
   text-align: center;
-  padding: 20px 0;
+  padding: 18px 0;
   font-size: 14px;
   opacity: 0.75;
   background: rgba(0,0,0,0.4);
@@ -153,7 +155,6 @@ tr:hover td {
 }
 
 .footer span {
-  color: #a5d8ff; 
+  color: #a5d8ff;
   font-weight: bold;
-  text-shadow: 0 0 8px rgba(165, 216, 255, 0.6);
 }
