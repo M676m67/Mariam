@@ -13,7 +13,7 @@ const bankData = [
 { title: "--", rank: "راين", money: "--" },
 { title: "--", rank: "هوميز", money: "--" },
 { title: "ايرين", rank: "مشرفه متدربة", money: "--" },
-{ title: "بيلي بوتشر", rank: "عضوة", money: "--" }.
+{ title: "بيلي بوتشر", rank: "عضوة", money: "--" },
 { title: "ايساغي", rank: "عضوة", money: "--" },
 { title: "تشوسو", rank: "عضوة", money: "--" },
 { title: "يومي", rank: "عضوة", money: "--" },
