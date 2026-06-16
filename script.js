@@ -3,7 +3,7 @@ const bankData = [
 { title: "روكيا", rank: "المؤسسة", money: "∞" },
 { title: "اليساندرو", rank: "المؤسسة", money: "∞" },
 { title: "كاناو", rank: "المؤسسة", money: "∞" },
-{ title: "--", rank: "المستشارة", money: "--" },
+{ title: "سوكونا", rank: "المستشارة", money: "--" },
 { title: "--", rank: "الجنراله", money: "--" },
 { title: "--", rank: "رئيسة الوزراء", money: "--" },
 { title: "--", rank: "شينغامي", money: "--" },
